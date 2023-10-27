@@ -120,16 +120,24 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 # 目的
 
 
-```ts {all|2-3|1-5|5|all}
+```ts {0|2-3|1-5|5|all}
 
 フィードバックプロジェクトを行うことで、誰もが互いの成長を願って、
 役職・年齢を問わず気軽にフィードバックし合える企業文化を作りたい
 
 実現する新たな仕組みを考え、実行する
 
+```
+
+<br>
+
+# 環境と原因
 
 
-
+```ts {0|1|1-2|1-3|all}
+・タスク実行者が受け身
+・スキル関係がコミュニケーションに影響する
+・上司、フィードバック対象の状況がわからず、遠慮する
 ```
 
 <arrow v-click="[3, 4]" x1="400" y1="320" x2="230" y2="200" color="#564" width="3" arrowSize="1" />
@@ -150,32 +158,33 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 ---
 
-# Components
+# 実施する施策
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+四半期MTGで3つの施策を考案しました。<br>
+その中の**第三者レビュー**を実施します。
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
+```ts {all|2}
+理解度スタンプ
+第三者レビュー
+GitHub Discussions
 ```
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
+普段のレビューではトップダウンでのレビューが基本。
+技術的自信を持っていない人やテキストベースのコミュニケーションが難しいと感じる人にとって、下からのフィードバックがしにくい環境になる。
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+**第三者レビュー**の導入により、<br>スキルやコミュニケーションのハードルを取り除き<br>気軽にフィードバックを行うことができる環境を作りたい。
+
+参考資料: [開発MTG WS2 プロダクト開発](https://ephemeral-raindrop-ab1faf.netlify.app/7)
 
 </div>
 <div>
 
-```html
-<Tweet id="1390115482657726468" />
-```
+#### 五十嵐　たくみ
 
-<Tweet id="1390115482657726468" scale="0.65" />
+<Tweet id="1677236716758007808" scale="0.65" />
 
 </div>
 </div>
