@@ -204,22 +204,22 @@ Also, HTML elements are valid:
 class: px-20
 ---
 
-# Themes
+# ルール
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+一定の制限を設け、運用継続や適切なレビュアー選択などフィードバックの質を保つことを目的としています。
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
 ```yaml
----
-theme: default
----
+レビュワー：好きな人
+タイミング：好きな時
+緊急度：低〜中
 ```
 
 ```yaml
----
-theme: seriph
----
+初級: 基本的なタスクや変更。: 文言変更や簡単なコードの修正。
+中級: 一般的な経験が必要なタスク。: 新しい機能の実装など（誰か付け加えて、、、）。
+上級: 専門知識が必要なタスク。: 仕様理解しなければならないタスクや複雑なコードの修正。
 ```
 
 <img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
