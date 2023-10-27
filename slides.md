@@ -117,26 +117,22 @@ layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Code
+# 目的
 
-Use code snippets and get the highlighting directly![^1]
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+```ts {all|2-3|1-5|5|all}
 
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+フィードバックプロジェクトを行うことで、誰もが互いの成長を願って、
+役職・年齢を問わず気軽にフィードバックし合える企業文化を作りたい
+
+実現する新たな仕組みを考え、実行する
+
+
+
+
 ```
 
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
+<arrow v-click="[3, 4]" x1="400" y1="320" x2="230" y2="200" color="#564" width="3" arrowSize="1" />
 
 [^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
