@@ -235,18 +235,17 @@ check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
 preload: false
 ---
 
-# Animations
+# レビュー依頼方法
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+第三者レビュー方法について
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
+・レビュワー対象<br>
+コミュニケーションが気軽にできる、好きな人、関わったことない人、誰でもOK
+
+・タイミング<br>
+タスクの進捗に関わらず、好きな時に依頼できる
+
+・その他追加します
 
 <div class="w-60 relative mt-6">
   <div class="relative w-40 h-40">
@@ -277,11 +276,11 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
   </div>
 
   <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
+    class="text-5xl absolute top-14 left-40 text-[#b2153b] -z-1"
     v-motion
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
+    EISHIN
   </div>
 </div>
 
@@ -301,42 +300,82 @@ const final = {
 }
 </script>
 
-<div
+<!-- <div
   v-motion
   :initial="{ x:35, y: 40, opacity: 0}"
   :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
 
 [Learn More](https://sli.dev/guide/animations.html#motion)
 
-</div>
+</div> -->
 
 ---
 
-# LaTeX
+# タスク難易度
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+レビュー依頼できるタスク難易度
 
-<br>
+・初級<br>
+基本的なタスクや変更。: 文言変更や簡単なコードの修正。
 
-Inline $\sqrt{3x-1}+(1+x)^2$
+・中級<br>
+一般的な経験が必要なタスク。: 新しい機能の実装など（誰か付け加えて、、、）。
 
-Block
-$$ {1|3|all}
-\begin{array}{c}
+・上級<br>
+専門知識が必要なタスク。: 仕様理解しなければならないタスクや複雑なコードの修正。
 
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+<div class="w-60 relative mt-6">
+  <div class="relative w-40 h-40">
+    <img
+      v-motion
+      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
+      :enter="final"
+      class="absolute top-0 left-0 right-0 bottom-0"
+      src="https://sli.dev/logo-square.png"
+      alt=""
+    />
+    <img
+      v-motion
+      :initial="{ y: 500, x: -100, scale: 2 }"
+      :enter="final"
+      class="absolute top-0 left-0 right-0 bottom-0"
+      src="https://sli.dev/logo-circle.png"
+      alt=""
+    />
+    <img
+      v-motion
+      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
+      :enter="final"
+      class="absolute top-0 left-0 right-0 bottom-0"
+      src="https://sli.dev/logo-triangle.png"
+      alt=""
+    />
+  </div>
 
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+  <div
+    class="text-5xl absolute top-14 left-40 text-[#b2153b] -z-1"
+    v-motion
+    :initial="{ x: -80, opacity: 0}"
+    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
+    EISHIN
+  </div>
+</div>
 
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
+<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<script setup lang="ts">
+const final = {
+  x: 0,
+  y: 0,
+  rotate: 0,
+  scale: 1,
+  transition: {
+    type: 'spring',
+    damping: 10,
+    stiffness: 20,
+    mass: 2
+  }
+}
+</script>
 
 ---
 
