@@ -220,15 +220,15 @@ graph TD
   C --- E((巧さん))
   D --- F((巧さん))
   D --- G((好きな人))
+  style F fill:#fff9e3,stroke:#c1df76
+  style G fill:#fff9e3,stroke:#c1df76
 
 ```
 
 </div>
 <div>
 
-#### 五十嵐　たくみ
-
-<Tweet id="1677236716758007808" scale="0.65" />
+<img src="/slack01.png" alt=""/>
 
 </div>
 </div>
