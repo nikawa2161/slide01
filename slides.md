@@ -201,7 +201,40 @@ Also, HTML elements are valid:
 
 
 ---
-class: px-20
+
+
+# 第三者レビュー
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+第三者レビューは通常の実装フローのレビュー時に<br>
+好きな人を選んでレビュー依頼します。
+
+```mermaid
+%%{init: { 'theme':'default', 'flowchart' : { 'rankSpacing': 30 } } }%%
+graph TD
+  A[(タスク依頼)] --> B[実装]
+  B --> |通常| C[レビュー依頼]
+  B --> |第三者レビュー| D[レビュー依頼]
+  C --- E((巧さん))
+  D --- F((巧さん))
+  D --- G((好きな人))
+
+```
+
+</div>
+<div>
+
+#### 五十嵐　たくみ
+
+<Tweet id="1677236716758007808" scale="0.65" />
+
+</div>
+</div>
+
+---
+transition: slide-up
 ---
 
 # ルール
