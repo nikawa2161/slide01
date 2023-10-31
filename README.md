@@ -1,4 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+## 公開スライド
+- https://slide01.vercel.app/
 
 ## 準備
 - `git clone`
